@@ -40,24 +40,11 @@ a {
   z-index: 10;
 }
 
-/* .global-nav {
-  height: 44px;
-  padding: 0 1rem;
-}
 
-.global-nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto; 
-  height: 100%;
-  font-size: 1rem;
-  padding: 0 1rem;
-} */
 
 .scroll-section {
   padding-top: 50vh;
+  position: relative;
 }
 
 
@@ -68,7 +55,8 @@ a {
   position: relative;
   z-index: 5;
   top: -10vh;
-  color: rgba(182, 179, 179, 0.5);
+  color: rgba(150, 150, 150, 0.9);
+  text-align: center;
 }
 
 .main-message {
@@ -80,6 +68,7 @@ a {
   height: 3em;
   font-size: 2rem;
   top: 35vh;
+  color: rgba(150, 150, 150, 0.9);
 }
 
 .main-message p {
@@ -102,20 +91,6 @@ a {
   color: rgb(29, 29, 31);
 }
 
-.desc-message {
-  color: rgba(182, 179, 179, 0.5);
-  font-weight: bold;
-  width: 50%;
-  font-size: 4rem;
-}
-
-.pin {
-  width: 2px;
-  height: 100px;
-  color: rgba(182, 179, 179, 0.5);
-}
-
-
 .end-message {
   max-width: 1000px;
   margin: 0 auto;
@@ -131,13 +106,6 @@ a {
   color: rgb(29, 29, 31);
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 5em;
-  background-color: #fff;
-}
 
 .sticky-elem {
   position: fixed;
@@ -146,33 +114,22 @@ footer {
   display: none;
 }
 
-
-/*  동물 상세 수정요망 */
-/* .sticky-elem .desc-message .a,
-.sticky-elem .desc-message .b,
-.sticky-elem .desc-message .c {
-  position: absolute;
-  text-align: right;
-} */
-
-/* 
-#scroll-section-2 .a {
-  top: 30%;
-  right: 60%;
+.mid-message {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #888;
+  transform: translateY(-40%);
 }
 
-#scroll-section-2 .b {
-  top: 50%;
-  left: 0%;
+.canvas-caption {
+  max-width: 1000px;
+  margin: -24rem auto 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #888;
 }
-
-#scroll-section-2 .c {
-  top: 30%;
-  left: 60%;
-} */
-
-
-
 
 
 #show-scene-0 #scroll-section-0 .sticky-elem,
@@ -183,9 +140,13 @@ footer {
   display: block;
 }
 
+.scroll-effect-end .sticky-elem {
+  display: none !important;
+}
+
 
 .sticky-elem-canvas {
-  height: 100vh;
+  height: 100%;
   top: 0;
 }
 
@@ -195,9 +156,131 @@ footer {
   left: 50%;
 }
 
+/* scale img section */
+
 .image-blend-canvas {
-  border: 3px solid red;
+  opacity: 0.7;
 }
+
+#scroll-section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas-caption {
+  color: rgb(29, 29, 31);
+}
+
+
+
+/* end section */
+
+
+.end-section {
+  height: 100vh;
+
+}
+
+.content {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact-inner {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-top: 10%;
+}
+
+
+.contact-inner div {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  transform: translateX(50%);
+}
+
+
+.contact-form h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+.send-box label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+
+.send-box label span {
+  color: crimson;
+  font-weight: normal;
+}
+
+.send-box input[type=email],
+.send-box input[type=text],
+.send-box textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.send-box input[type=email]:hover,
+.send-box input[type=text]:hover,
+.send-box textarea:hover {
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+}
+
+.send-box input[type=email]:focus,
+.send-box input[type=text]:focus,
+.send-box textarea:focus {
+  background-color: #eee;
+}
+
+.send-box button {
+  background-color: #0088cc;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.send-box button:hover {
+  background-color: #000;
+}
+
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #000;
+  border-top: 1px solid #888;
+
+}
+
 
 
 
@@ -225,6 +308,17 @@ footer {
     font-size: 5vw;
   }
 
+  .mid-message {
+    font-size: 3rem;
+    padding-bottom: 5%;
+    transform: translateY(-10%);
+  }
+
+  .canvas-caption {
+    font-size: 2rem;
+    padding-top: 5%;
+  }
+
   .description {
 
     margin: 0 auto;
@@ -245,23 +339,6 @@ footer {
     opacity: 0;
   }
 
-  .end-message {
-    font-size: 4vw;
-  }
 
-  /* #scroll-section-2 .a {
-    top: 10%;
-    left: 40%;
-  }
-
-  #scroll-section-2 .b {
-    top: 20%;
-    left: 50%;
-  }
-
-  #scroll-section-2 .c {
-    top: 30%;
-    left: 60%;
-  } */
 
 }
