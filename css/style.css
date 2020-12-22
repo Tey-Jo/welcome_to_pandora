@@ -1,4 +1,7 @@
-@charset utf-8 html {
+@charset 'utf-8';
+
+
+html {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
 }
@@ -22,6 +25,9 @@ a {
 /* mobile */
 
 .slogan {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +37,10 @@ a {
   font-size: 2.2rem;
   font-weight: bold;
   padding: 0 1rem;
+  z-index: 10;
 }
 
-.global-nav {
+/* .global-nav {
   height: 44px;
   padding: 0 1rem;
 }
@@ -43,29 +50,36 @@ a {
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto; 
   height: 100%;
   font-size: 1rem;
   padding: 0 1rem;
-}
+} */
 
 .scroll-section {
   padding-top: 50vh;
 }
 
-#scroll-section-0 h1 {
+
+#scroll-section-0 h1,
+#scroll-section-3 h1 {
   font-size: 4rem;
   text-align: center;
+  position: relative;
+  z-index: 5;
+  top: -10vh;
+  color: rgba(182, 179, 179, 0.5);
 }
 
 .main-message {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 4px;
   height: 3em;
   font-size: 2rem;
-  background-color: #ddd;
+  top: 35vh;
 }
 
 .main-message p {
@@ -73,13 +87,6 @@ a {
   font-weight: bold;
   text-align: center;
 }
-
-/* .main-message small {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 0.5em;
-
-} */
 
 .description {
   max-width: 1000px;
@@ -96,16 +103,18 @@ a {
 }
 
 .desc-message {
+  color: rgba(182, 179, 179, 0.5);
   font-weight: bold;
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 4rem;
 }
 
 .pin {
-  width: 1px;
+  width: 2px;
   height: 100px;
-  background: rgb(29, 29, 31);
+  color: rgba(182, 179, 179, 0.5);
 }
+
 
 .end-message {
   max-width: 1000px;
@@ -130,6 +139,68 @@ footer {
   background-color: #fff;
 }
 
+.sticky-elem {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+
+/*  동물 상세 수정요망 */
+/* .sticky-elem .desc-message .a,
+.sticky-elem .desc-message .b,
+.sticky-elem .desc-message .c {
+  position: absolute;
+  text-align: right;
+} */
+
+/* 
+#scroll-section-2 .a {
+  top: 30%;
+  right: 60%;
+}
+
+#scroll-section-2 .b {
+  top: 50%;
+  left: 0%;
+}
+
+#scroll-section-2 .c {
+  top: 30%;
+  left: 60%;
+} */
+
+
+
+
+
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem,
+#show-scene-4 #scroll-section-4 .sticky-elem {
+  display: block;
+}
+
+
+.sticky-elem-canvas {
+  height: 100vh;
+  top: 0;
+}
+
+.sticky-elem-canvas canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.image-blend-canvas {
+  border: 3px solid red;
+}
+
+
+
 /* PC */
 
 @media (min-width:1024px) {
@@ -145,12 +216,13 @@ footer {
   }
 
 
-  #scroll-section-0 h1 {
+  #scroll-section-0 h1,
+  #scroll-section-3 h1 {
     font-size: 8vw;
   }
 
   .main-message {
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   .description {
@@ -169,9 +241,27 @@ footer {
 
   .desc-message {
     width: 20%;
+    font-weight: bold;
+    opacity: 0;
   }
 
   .end-message {
     font-size: 4vw;
   }
+
+  /* #scroll-section-2 .a {
+    top: 10%;
+    left: 40%;
+  }
+
+  #scroll-section-2 .b {
+    top: 20%;
+    left: 50%;
+  }
+
+  #scroll-section-2 .c {
+    top: 30%;
+    left: 60%;
+  } */
+
 }
