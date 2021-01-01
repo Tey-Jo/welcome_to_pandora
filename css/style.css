@@ -22,7 +22,8 @@ a {
 }
 
 
-/* mobile */
+/* tablet size */
+
 
 .slogan {
   position: absolute;
@@ -141,7 +142,7 @@ a {
 }
 
 .scroll-effect-end .sticky-elem {
-  display: none !important;
+  /* display: none !important; */
 }
 
 
