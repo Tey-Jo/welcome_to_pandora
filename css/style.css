@@ -24,7 +24,7 @@ a {
 
 /* tablet size */
 
-
+/* 
 .slogan {
   position: absolute;
   top: 0;
@@ -39,7 +39,7 @@ a {
   font-weight: bold;
   padding: 0 1rem;
   z-index: 10;
-}
+} */
 
 
 
@@ -56,7 +56,7 @@ a {
   position: relative;
   z-index: 5;
   top: -10vh;
-  color: rgba(150, 150, 150, 0.9);
+  color: rgb(29, 29, 31);
   text-align: center;
 }
 
@@ -69,7 +69,7 @@ a {
   height: 3em;
   font-size: 2rem;
   top: 35vh;
-  color: rgba(150, 150, 150, 0.9);
+  color: rgb(29, 29, 31);
 }
 
 .main-message p {
@@ -142,7 +142,7 @@ a {
 }
 
 .scroll-effect-end .sticky-elem {
-  /* display: none !important; */
+  display: none !important;
 }
 
 
