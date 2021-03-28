@@ -6,7 +6,7 @@
 
 
 
-### [DEMO PAGE](https://https://jojo-tey.github.io/welcome_to_pandora/)
+### [DEMO PAGE](https://jojo-tey.github.io/welcome_to_pandora/)
 
 <br>
 
