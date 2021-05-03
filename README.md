@@ -1,8 +1,8 @@
-# welcome_to_pandora
+# Welcome to pandora
 
 
 
-## With the motif of the movie Avatar's Pandora planet, I made an advertisement page for a travel agency that manages space travel. The background was created to animate according to the movement of the scroll by referring to the interactive technique applied to the product advertisement page of Apple. I chose the Apple website because I was curious about how to create colorful and cool interactions on the Apple website, and I was interested in the creative interactive web.
+> With the motif of the movie Avatar's Pandora planet, I made an advertisement page for a travel agency that manages space travel. The background was created to animate according to the movement of the scroll by referring to the interactive technique applied to the product advertisement page of Apple. I chose the Apple website because I was curious about how to create colorful and cool interactions on the Apple website, and I was interested in the creative interactive web.
 
 
 
